@@ -8,16 +8,11 @@ st.title('Landing Page Optimizer with GPT4-Vision')
 st.sidebar.title('Settings')
 api_key = st.sidebar.text_input("Enter API KEY:", type="password")
 # Upload landing page image
-count = 0
-uploaded_image = st.sidebar.file_uploader('Upload Landing Page Image', type=['jpg', 'png'],key=count)
-count += 1
+
+uploaded_image = st.sidebar.file_uploader('Upload Landing Page Image', type=['jpg', 'png'])
 
 # Initialize GPT4ImageOptimizer
 optimizer = GPT4ImageOptimizer(api_key)
-
-
-# Upload landing page image
-uploaded_image = st.sidebar.file_uploader('Upload Landing Page Image', type=['jpg', 'png'])
 
 if uploaded_image:
     # Display uploaded image
