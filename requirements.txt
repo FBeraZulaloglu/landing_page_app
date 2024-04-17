@@ -1,0 +1,5 @@
+streamlit==1.6.0
+Pillow==8.1.0
+altair==4.0
+protobuf<=3.20.1
+click<=8.0.4
